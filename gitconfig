@@ -1,0 +1,16 @@
+# To include this file in your git config, add the following to ~/.gitconfig
+# [include]
+#     path = <relative path from .gitconfig to this file>
+
+[core]
+    warnambiguousrefs = false
+[alias]
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+    ri = rebase -i
+    a = add -A
+
+    v = log --oneline --abbrev-commit --all --graph
+    shove = "!f() { git add -A && git commit -m "WIP" || true && git push origin $1;}; f"
