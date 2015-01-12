@@ -1,0 +1,12 @@
+[headmouse]
+output = pymouse_output
+arduino_port = /dev/tty.usbmodemfa131
+input_visualize = True
+
+input = camera
+input_tracker = eye_tracker
+input_camera_resolution = 640, 480 
+
+acceleration = .09
+sensitivity = 0
+smoothing = .40
