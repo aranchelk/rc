@@ -11,4 +11,4 @@ input_camera_resolution = 640, 480
 
 acceleration = .04
 sensitivity = .08
-smoothing = .75
+smoothing = .8
