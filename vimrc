@@ -14,9 +14,9 @@ set ruler
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType ruby set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType ruby set tabstop=4|set shiftwidth=4|set expandtab
-autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab| set autoindent  
+autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab| set autoindent
 
-autocmd FileType make set tabstop=4 
+autocmd FileType make set tabstop=4
 
 autocmd BufNewFile,BufRead *.cabal set tabstop=4|set shiftwidth=4|set expandtab|set autoindent
 autocmd BufNewFile,BufRead *.hs set tabstop=4|set shiftwidth=4|set expandtab|set autoindent

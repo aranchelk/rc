@@ -7,7 +7,7 @@ input_visualize = True
 
 input = camera
 input_tracker = dot_tracker
-input_camera_resolution = 640, 480 
+input_camera_resolution = 640, 480
 
 acceleration = .04
 sensitivity = .08
