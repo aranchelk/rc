@@ -6,7 +6,7 @@ nmap <CR> o<Esc>
 
 map Q :q!<CR>
 
-set autochdir
+set noautochdir
 set pastetoggle=<F2>
 set nu
 set ruler
