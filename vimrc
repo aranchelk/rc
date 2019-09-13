@@ -7,6 +7,7 @@ nmap <CR> o<Esc>
 map Q :q!<CR>
 
 set noautochdir
+set autoindent
 set pastetoggle=<F2>
 set nu
 set ruler
@@ -24,7 +25,8 @@ autocmd BufNewFile,BufRead *.hs set tabstop=4|set shiftwidth=4|set expandtab|set
 autocmd BufNewFile,BufRead *.elm set tabstop=4|set shiftwidth=4|set expandtab|set autoindent
 
 set mouse=a
-set clipboard=unnamed
+"Use the system clipboard, tried it, but it was annoying. 
+"set clipboard=unnamed
 
 set cursorline
 set cursorcolumn
