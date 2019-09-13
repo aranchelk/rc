@@ -7,6 +7,7 @@
 [alias]
     co = checkout
     ci = commit
+    ciw = commit -m WiP
     br = branch
     st = status
     ri = rebase -i
@@ -14,7 +15,7 @@
     au = add -A
     rp = rev-parse
     rph = rev-parse HEAD
-    pu = push origin HEAD
+    ph = push origin HEAD
 
     v = log --oneline --abbrev-commit --all --graph
     shove = "!f() { git add -u && git commit -m "WIP" || true && git push origin $1;}; f"
