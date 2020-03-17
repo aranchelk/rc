@@ -24,7 +24,7 @@ autocmd BufNewFile,BufRead *.cabal set tabstop=4|set shiftwidth=4|set expandtab|
 autocmd BufNewFile,BufRead *.hs set tabstop=4|set shiftwidth=4|set expandtab|set autoindent
 autocmd BufNewFile,BufRead *.elm set tabstop=4|set shiftwidth=4|set expandtab|set autoindent
 
-set mouse=v
+" set mouse=v
 
 " My crosshairs
 set cursorline
