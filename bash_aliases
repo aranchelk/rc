@@ -13,3 +13,8 @@ frw () {
 }
 
 alias mvi="open -a MacVim.app $1"
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    alias pbcopy='xclip -selection clipboard'
+    alias pbpaste='xclip -selection clipboard -o'
+fi
