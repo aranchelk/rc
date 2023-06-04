@@ -1,5 +1,6 @@
 filetype on
 syntax on
+"filetype plugin indent on
 
 "nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
@@ -23,6 +24,7 @@ autocmd FileType make set tabstop=4
 autocmd BufNewFile,BufRead *.cabal set tabstop=4|set shiftwidth=4|set expandtab|set autoindent
 autocmd BufNewFile,BufRead *.hs set tabstop=4|set shiftwidth=4|set expandtab|set autoindent
 autocmd BufNewFile,BufRead *.elm set tabstop=4|set shiftwidth=4|set expandtab|set autoindent
+autocmd BufNewFile,BufRead *.purs set tabstop=4|set shiftwidth=4|set expandtab|set autoindent
 
 " set mouse=v
 

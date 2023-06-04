@@ -5,20 +5,33 @@
 [core]
     warnambiguousrefs = false
 [alias]
+    # Basic abbreviations
+    st = status
+    br = branch
     co = checkout
     ci = commit
-    cim = commit -m
-    ciw = commit -m WiP
-    br = branch
-    st = status
     ri = rebase -i
     aa = add -A
     au = add -A
-    rp = rev-parse
-    rph = rev-parse HEAD
-    ph = push origin HEAD
 
     v = log --oneline --abbrev-commit --all --graph
+
+    # Special checkins
+    cim = commit -m
+    ciw = commit -m WiP
+    ph = push origin HEAD
     shove = "!f() { git add -u && git commit -m "WIP" || true && git push origin $1;}; f"
+
+    # Special deletes
+    unstage = reset HEAD 
+    stop-tracking = rm --cached
+    # Stage the deletion in git for files that have been deleted on the file system
+    stage-deleted = rm $(git ls-files --deleted)
+
+    # Other
+    get-hash = rev-parse
+    rph = rev-parse HEAD
+    isClean = "!f() { test -z "$(git ls-files --exclude-standard --others)" && git diff-index HEAD --quiet;}; f"
+
 [diff]
     tool = vimdiff
