@@ -16,6 +16,10 @@
 
     v = log --oneline --abbrev-commit --all --graph
 
+    # Special remote stuff
+    remote-co = '!f() { git fetch origin && git checkout -b "$1" origin/"$1"; }; f'
+    remote-br = branch -r
+
     # Special checkins
     cim = commit -m
     ciw = commit -m WiP
@@ -24,7 +28,8 @@
 
     # Special deletes
     unstage = reset HEAD 
-    stop-tracking = rm --cached
+    stop-tracking = rm --cached -r
+
     # Stage the deletion in git for files that have been deleted on the file system
     stage-deleted = rm $(git ls-files --deleted)
 
@@ -35,3 +40,8 @@
 
 [diff]
     tool = vimdiff
+[init]
+	defaultBranch = main
+[user]
+	email = carl@datable.io
+	name = Carl Haken
