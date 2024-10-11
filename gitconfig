@@ -17,7 +17,7 @@
     v = log --oneline --abbrev-commit --all --graph
 
     # Special remote stuff
-    remote-co = '!f() { git fetch origin && git checkout -b "$1" origin/"$1"; }; f'
+    remote-co = "!f() { git fetch origin && git checkout -b \"$1\" origin/"$1"; }; f"
     remote-br = branch -r
 
     # Special checkins
