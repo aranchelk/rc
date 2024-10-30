@@ -18,3 +18,9 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     alias pbcopy='xclip -selection clipboard'
     alias pbpaste='xclip -selection clipboard -o'
 fi
+
+#alias docker-kill-all='docker kill $(docker ps -q)'
+alias docker-kill-all='docker ps -q | grep -q . && docker kill $(docker ps -q)'
+
+# Terraform
+alias terraform-purge-state='terraform state list | xargs -I {} terraform state rm {}'

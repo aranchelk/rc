@@ -4,6 +4,7 @@
 
 [core]
     warnambiguousrefs = false
+	pager = view -
 [alias]
     # Basic abbreviations
     st = status
@@ -45,3 +46,10 @@
 [user]
 	email = carl@datable.io
 	name = Carl Haken
+[pager]
+	diff = view -
+	log = view -
+	show = view -
+[color]
+	diff = false
+	branch = false
