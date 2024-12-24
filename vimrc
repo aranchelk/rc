@@ -13,6 +13,7 @@ set pastetoggle=<F2>
 set nu
 set ruler
 set guitablabel=%M%f
+set backspace=indent,eol,start
 
 autocmd FileType haskell set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
