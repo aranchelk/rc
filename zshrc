@@ -16,3 +16,5 @@ setopt nomenucomplete
 setopt interactivecomments
 
 . ~/rc/bash_aliases
+
+bindkey "^R" history-incremental-search-backward
