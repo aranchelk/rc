@@ -4,7 +4,7 @@
 alias ws-find='find . -type f -exec egrep -l " +$" {} \;'
 alias ws-zap='gsed -i -e "s/[ \t]*$//"'
 
-alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ."
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 
 alias dc="docker-compose"
 
